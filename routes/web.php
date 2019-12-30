@@ -11,11 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    $pages = App\Pages::all();
-    return view('welcome', ['pages' => compact('pages')]);
-//    return view('welcome');
-});
+Route::get('/', "PageController@show");
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
