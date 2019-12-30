@@ -6,5 +6,4 @@
 
 @section("content")
     {!! $page->body !!}
-    {{ storage_path() . '\\' . setting('site.logo') }}
 @endsection

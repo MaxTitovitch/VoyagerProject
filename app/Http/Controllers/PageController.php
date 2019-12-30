@@ -7,8 +7,8 @@ use App\Pages;
 
 class PageController extends Controller
 {
-    public function show($slug = 'main') {
-        $page = Pages::findBySlug($slug);
+    public function showPage($slug = 'main') {
+        $page = Pages::findFirstBySlug($slug);
         if($page) {
             return view('welcome', ['page' => $page]);
         } else {
