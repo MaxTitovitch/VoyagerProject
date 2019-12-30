@@ -7,8 +7,12 @@ use App\Pages;
 
 class PageController extends Controller
 {
-    public function show() {
-        $pages = Pages::all();
-        return view('welcome', ['pages' => compact('pages')]);
+    public function show($slug = 'main') {
+        $page = Pages::findBySlug($slug);
+        if($page) {
+            return view('welcome', ['page' => $page]);
+        } else {
+            return abort(404);
+        }
     }
 }
