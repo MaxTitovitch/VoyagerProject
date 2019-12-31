@@ -11,8 +11,9 @@
 |
 */
 
-Route::get('/{slug?}', "PageController@showPage");
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Route::get('/{slug?}', "PageController@showPage");

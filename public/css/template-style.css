@@ -1,0 +1,45 @@
+body {
+    background-color: #62a8ea;
+}
+
+.main-menu nav div > ul > .active > a {
+    background-color: #fff;
+    color: #222;
+}
+
+.main-menu nav div > ul > li:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.main-menu nav div > ul > li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-menu nav div > ul > li {
+    list-style-type: none;
+}
+
+.dropdown-menu {
+    background-color: #333;
+    width: 15vw;
+    border-radius: 0px;
+    border-top: 2px solid #002596;
+    margin: 0;
+}
+
+.dropdown-menu li a {
+    color: #b3b3b3;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.dropdown-menu .active a {
+    color: #222;
+}
+
+.dropdown-menu li a:hover {
+    color: #222;
+}
+
