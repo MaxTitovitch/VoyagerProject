@@ -1,19 +1,47 @@
 body {
-    background-color: #62a8ea;
+    background-color: #8d948d;
+    font-weight: inherit;
+    font-family: Lato;
+}
+
+.navbar-nav > li > .nav-link {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.navbar > button {
+    margin-left: auto;
+    margin-right: 0 !important;
+}
+
+.navbar-nav > li {
+    height: 110px;
+    display:table;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 0 !important;
 }
 
 .main-menu nav div > ul > .active > a {
     background-color: #fff;
+
+}
+
+.main-menu nav div > ul > .active > a > span {
     color: #222;
 }
 
-.main-menu nav div > ul > li:hover {
-    background-color: #fff;
-    color: #222;
-}
+/*.main-menu nav div > ul > li:hover {*/
+/*    background-color: #fff;*/
+/*    color: #222;*/
+/*}*/
 
 .main-menu nav div > ul > li > a {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
 }
 
@@ -23,23 +51,86 @@ body {
 
 .dropdown-menu {
     background-color: #333;
-    width: 15vw;
+    word-wrap: normal;
+    white-space: nowrap;
     border-radius: 0px;
     border-top: 2px solid #002596;
     margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .dropdown-menu li a {
     color: #b3b3b3;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-decoration: none;
+}
+
+.dropdown-menu li {
+    padding: 10px 10px;
 }
 
 .dropdown-menu .active a {
     color: #222;
 }
 
+.dropdown-menu li a {
+    width: 100%;
+}
+
 .dropdown-menu li a:hover {
     color: #222;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-right: 15px;
+    letter-spacing: 3px;
+}
+
+.footer {
+    color: #808080!important;
+}
+
+.footer-info {
+    background-color: #3d4045;
+}
+
+.footer-copyright {
+    background-color: #43474d;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-into-text {
+    padding: 50px 3%;
+}
+
+.blue-link {
+    color: #999999;
+}
+
+
+.blue-link:hover {
+    color: #002596;
+    text-decoration: none;
+}
+
+.icon-style {
+    width: 20px;
+}
+
+.icon-circle {
+    color: #fff;
+    border: 1px solid #808080;
+    border-radius: 50%;
+    padding: 10px;
 }
 

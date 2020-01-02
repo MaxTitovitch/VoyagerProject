@@ -11,6 +11,7 @@ class PageController extends Controller
         if($page) {
             return view('welcome', ['page' => $page]);
         } else {
+            dump(Pages::all());
             return abort(404);
         }
     }
